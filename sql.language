@@ -249,14 +249,17 @@ select_stmt =
 
 select_core =
   ( SELECT  ( ( DISTINCT / ALL )? )
-            ( select_result
-                (  ( whitespace comma select_result )*
-                       ) )
+            select_results
      (  ( ( FROM join_source )? )
           )
      (  ( ( WHERE expr )? )
           )
      ( GROUP BY ( ordering_term comma )+ ( HAVING expr )? )? )
+
+select_results =
+    ( select_result
+        (  ( whitespace comma select_result )*
+               ) )
 
 select_result =
    ( whitespace
@@ -351,10 +354,7 @@ table_ref =
           ) )
 
 column_ref =
-   ( (  ( table_name dot )
-          )?
-       (  column_name
-          ) )
+    expr
 
 vacuum_stmt =
 VACUUM
