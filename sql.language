@@ -11,7 +11,9 @@
 //
 // 2012, shamrin
 // =============
-// Removed all PEG.js specific syntax: labels /\w+:/, actions /{.*}/)
+// * removed all PEG.js specific syntax: labels /\w+:/, actions /{.*}/)
+// * allow expressions in SELECT results
+// * add `select_results` symbol for easier to understand tree
 
 start = sql_stmt_list
 
