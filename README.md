@@ -1,18 +1,7 @@
 SQL parser in JavaScript
 ========================
 
-This project provides a PEG.js grammar for SQL syntax. Why? I wanted
-to properly parse SQL in JavaScript, knocking down yet another thing
-in that long list of things that will be reimplemented in JavaScript
-one day.
-
-See the ./sql.pegjs file, or...
-
-* http://github.com/steveyen/sqld3/blob/master/sql.pegjs
-
-Unlike previous hand-coded attempts at SQL parsing in JavaScript, such
-as my previous http://code.google.com/p/trimpath/wiki/TrimQuery, the
-parsing here is grammar (PEG) based.
+This project provides a <del>PEG.js</del> Language.js grammar for SQL syntax.
 
 SQL syntax
 ----------
@@ -26,7 +15,8 @@ See also
 --------
 
 * PEG.js: http://pegjs.majda.cz/
-* sqlite: http://www.sqlite.org
+* Language.js: http://languagejs.com
+* SQLite: http://www.sqlite.org
 
 License
 -------
